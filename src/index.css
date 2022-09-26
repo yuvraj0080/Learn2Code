@@ -18,26 +18,64 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  box-shadow: 0 3px 5px rgba(197, 200, 204, 0.3); 
+  background-color: rgb(255, 255, 255); 
   
 }
 
 .container1{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 15px;
+  color: rgb(0, 0, 0);
 }
 .container2{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 50px;
+  flex: 1;
+  }
+  
+.container1 span{
+  color: rgb(247, 99, 30);
+  font-size: larger;
 }
 
 .navItem{
-  margin: 5px 100px;
+  margin: 5px 50px;
+}
+
+.navItem1{
+  
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        font-weight: bold;
+        color: #000000;
+        font-size: 1.2em;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+}
+
+.navItem2{
+  background-color: white;
+  border-width: 2px;
+  color: #000000;
+  font-size: 15px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+navItem1:hover,navItem2:hover{
+  cursor: pointer;
+  opacity: 1.2;
 }
 
 .coursesContainer{
@@ -66,4 +104,159 @@ code {
   margin: 5px 5px;
   height: 180px;
   width: 260px;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.carousel-wrapper{
+  width: 65%;
+  object-fit: contain;
+  object-position: initial;
+  margin-top: 5px;
+}
+
+.carousel-wrapper span{
+      position:absolute;
+      bottom: 0px;
+      left: 40%;
+      color:#c30;
+      font-size:2em;
+      -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    justify-content: space-evenly;
+    height: 40%;
+    top: 0pt; 
+    left: 5pt;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: auto;
+    max-width: 25%; 
+    padding: 20px; 
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 1.6rem
+     }
+
+  .text-block1 {
+    display:flex;
+    flex-direction: column;
+    position: absolute; 
+    bottom: 15%; 
+    right: 25pt;
+    background: rgb(255, 255, 255); 
+    background: rgba(255, 255, 255, 0.719); 
+    color: #000000; 
+    width: 25%; 
+    padding: 20px; 
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .join{
+    width:100% ;
+    margin-top: 5px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    transition-duration: .2s;
+    color: white;
+    font-size: 1.4rem
+  }
+  
+  .join:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+  }
+  
+
+.base-section{
+  margin-top: 5px;
+
+}
+
+.ViewCourse{
+  width:90% ;
+  margin:0 1rem;
+  font-size: 1.4rem;
+  margin-block-start: 10px;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  transition-duration: .2s;
+  border-radius: 8px;
+  color: white;
+}
+
+.ViewCourse:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+/* Login page */
+
+.bg-img {
+  
+  background-image: url("https://i.postimg.cc/8cf6v1rk/1.jpg");
+  height: 45vw; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.container {
+  position: absolute;
+  min-width: 70px;
+  margin: 20px;
+  max-width:20%;
+  padding: 16px;
+  background-color: white;
+  opacity:0.9;
+  justify-content: center;
+  align-items: center;
+}
+
+  input[type=text], input[type=password],input[type=email] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
 }

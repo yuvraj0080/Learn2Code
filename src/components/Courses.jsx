@@ -7,7 +7,7 @@ const Courses = () => {
     <div className='coursesContainer'>
         {coursesData.map(course =>{
             return(
-                <Link to={`couse-detail/${course.id}`} >
+                <Link to={`course-detail/${course.id}`} key ={course.id} >
                     <div className='cContainer'>
                     <img src={course.image} alt="course-img" className='cImage' />
                     <h3 className='cTitle'>{course.title}</h3>
