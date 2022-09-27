@@ -3,6 +3,8 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+
 
 
 const Home = () => {
@@ -33,6 +35,7 @@ const Home = () => {
               </div>
           </Carousel>
             </div>
+          <Footer></Footer>
           
           </div>
 
