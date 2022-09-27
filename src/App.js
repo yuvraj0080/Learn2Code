@@ -9,6 +9,8 @@ import CourseDetails from './components/CourseDetails';
 import Login from './components/Login';
 import Register from './components/Register';
 import Listemployee from './components/Listemployee';
+import Aboutus from './components/Aboutus';
+import Contactus from './components/Contactus';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="courses/course-detail/:id" element={<CourseDetails />} />
           <Route path="register" element={<Register />} />
           <Route path="/employees" element={<Listemployee></Listemployee>}></Route>
+          <Route path="about" element={<Aboutus/>}/>
+          <Route path="contact" element={<Contactus/>}/>
         </Routes>
       </div>
       

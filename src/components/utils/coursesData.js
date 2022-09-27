@@ -2,7 +2,7 @@ export const coursesData= [
     {
         id:"1",
         title:"C++",
-        Description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap",
+        Description:"If you want to know how to develop software using C# and you have little to no experience with programming, you've come to the right place. This learning path covers the essentials of the C# programming language including development environment setup, variables, data, object-oriented, code structures, and classes.",
         image:"https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1551437392/img/co_img_1539_1633434090.png",
         link:"https://www.youtube.com/embed/vLnPwxZdW4Y"
     },
