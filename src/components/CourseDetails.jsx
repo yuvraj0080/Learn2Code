@@ -23,8 +23,9 @@ const CourseDetails = () => {
         return(
           <div className=''>
             <h2>{course.title}</h2>
-            <img src={course.image} alt="image" />
-          </div>
+            
+            <iframe width="90%" height="700px" src={course.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         )
       }
     })

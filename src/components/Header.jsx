@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {FaUserAlt} from "react-icons/fa"
 import { fetchUser } from './utils/fetchUser'
+import {useNavigate} from "react-router-dom"
+
+
 
 const Header = () => {
     const [user, setUser] = useState("")
@@ -13,6 +16,20 @@ const Header = () => {
             setUser(userInfo)
         }
     },[])
+
+const navigate = useNavigate();
+
+function logout(){
+    localStorage.clear();
+    navigate("/", {replace:true})
+    }
+
+    function refreshPage(){      
+        localStorage.clear();
+        window.parent.location = window.parent.location.href; 
+        navigate("/register", {replace:true})
+    }
+
   return (
     <div className='Header'>
         <div className='container1'>
@@ -29,7 +46,9 @@ const Header = () => {
         </div>
     
         <div className='container2'>
-            {!user ? <Link to={"login"} className="navItem">
+        {!user ? <Link to={"register"} className="navItem">
+                <button class="navItem2">Register</button></Link> : <button class="navItem2" onClick={() => refreshPage()}> Logout </button> }
+        {!user ? <Link to={"login"} className="navItem">
                 <button class="navItem2">Login</button></Link> : <p>Hello, {user.username}</p>}
             <Link to={"user-info"} className="navItem">
                 <FaUserAlt />
