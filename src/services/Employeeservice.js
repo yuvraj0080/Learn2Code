@@ -21,4 +21,4 @@ createEmployee(employee)
 }
 
 }
-export default new Employeeservice()  //Inject Employeeservice object in a component
+export default new Employeeservice()  
