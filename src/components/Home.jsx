@@ -25,7 +25,10 @@ const Home = () => {
             <img src="https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-12-03/84256810-354d-11eb-be48-092568f6a231.jpg" alt="home-img2"></img>
               <div class="text-block1">
                 <h1>Find your perfect program</h1>
-                <button class="ViewCourse"  data-toggle="modal">View Courses </button></div>
+                <Link to={"courses"} className="navItem">
+                <button class="ViewCourse" >View Courses </button>
+                </Link>
+                </div>
              
               </div>
           </Carousel>

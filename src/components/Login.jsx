@@ -13,10 +13,11 @@ const Login = () => {
     const handleLogin =(e)=>{
         e.preventDefault();
         
-        axios.post("http://localhost:8080/users/login",user).then((response)=>{
+        axios.post("http://localhost:8081/users/login",user).then((response)=>{
             if(response.data.status === 200){
                 setAuth(true);
                 localStorage.setItem("user", JSON.stringify(user));
+                window.location.reload(false);
             }
         })
         .catch((err)=>{

@@ -27,8 +27,7 @@ const Header = () => {
     
         <div className='container2'>
             {!user ? <Link to={"login"} className="navItem">
-                <button class="navItem2">Login</button>
-                </Link> : <p>Hello, {user.username}</p> }
+                <button class="navItem2">Login</button></Link> : <p>Hello, {user.username}</p>}
             <Link to={"user-info"} className="navItem">
                 <FaUserAlt />
             </Link>  

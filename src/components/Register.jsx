@@ -6,7 +6,7 @@ const Register = () => {
     const [user,setUser]=useState({ username:"" ,password:"",email:""})
 
     const handleRegister=()=>{
-        axios.post("http://localhost:8080/users",user).then((response)=>{
+        axios.post("http://localhost:8081/users",user).then((response)=>{
             console.log(response);
         })
     }
