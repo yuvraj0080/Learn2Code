@@ -23,6 +23,9 @@ const Header = () => {
             <Link to={"courses"} className="navItem">
                 <button class="navItem1">Courses</button>
             </Link>
+            <Link to={"/employees"} className="navItem">
+                <button class="navItem1">Admin</button>
+            </Link>
         </div>
     
         <div className='container2'>
