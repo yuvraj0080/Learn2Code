@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from "axios"
 import {useNavigate} from "react-router-dom"
+import { fetchUser } from './utils/fetchUser';
 
 const Login = () => {
 
@@ -8,6 +9,13 @@ const Login = () => {
     
     const [user,setUser]=useState({ username:"" ,password:""})
     const [auth, setAuth] = useState(true)
+
+    useEffect(()=>{
+        let userCheck = fetchUser()
+        if(userCheck){
+            navigate("/",{replace:true})
+        }
+    },[])
 
 
     const handleLogin =(e)=>{
@@ -17,7 +25,7 @@ const Login = () => {
             if(response.data.status === 200){
                 setAuth(true);
                 localStorage.setItem("user", JSON.stringify(user));
-                window.location.reload(false);
+                window.location.reload(false); 
             }
         })
         .catch((err)=>{

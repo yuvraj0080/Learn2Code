@@ -211,7 +211,7 @@ margin:50px auto
     color: #777;
     background-color: #000000;
     height: 50px;
-    transition-delay: 0.2s;
+    transition-duration: 0.2s;
     border-radius: 10px;
   }
 .footerItem:hover{

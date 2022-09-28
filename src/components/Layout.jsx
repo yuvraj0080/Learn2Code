@@ -7,6 +7,7 @@ const Layout = () => {
       <div className='header'>
         <Header />
         </div>
+       <div className='footer'><Footer/></div>
        
     </div>
   

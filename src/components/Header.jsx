@@ -19,11 +19,6 @@ const Header = () => {
 
 const navigate = useNavigate();
 
-function logout(){
-    localStorage.clear();
-    navigate("/", {replace:true})
-    }
-
     function refreshPage(){      
         localStorage.clear();
         window.parent.location = window.parent.location.href; 
@@ -40,7 +35,7 @@ function logout(){
             <Link to={"courses"} className="navItem">
                 <button class="navItem1">Courses</button>
             </Link>
-            <Link to={"/employees"} className="navItem">
+            <Link to={"admin"} className="navItem">
                 <button class="navItem1">Admin</button>
             </Link>
         </div>

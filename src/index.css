@@ -263,3 +263,9 @@ input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
 .btn:hover {
   opacity: 1;
 }
+
+/*Footer*/
+.footer{
+  position: absolute;
+  bottom:0;
+}

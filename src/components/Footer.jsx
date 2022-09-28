@@ -10,14 +10,13 @@ class Footer extends Component {
                 <p>copyright @Learn2Code.org(2022)</p>
 
                 <Link to={"/about"} className="navItem">
-                <button class="footerItem">About Us</button>
+                About Us
                 </Link>
 
                 <Link to={"/contact"} className="navItem">
-                <button class="footerItem">Contact Us</button>
+                Contact Us
+                </Link>
 
-                
-            </Link>
             </div>
         );
     }
